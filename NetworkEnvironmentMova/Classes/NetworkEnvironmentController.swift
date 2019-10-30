@@ -8,15 +8,15 @@
 import Foundation
 
 public class NetworkEnvironmentController {
-    private(set) lazy var currentEnvironment = loadEnvironment()
+    public private(set) lazy var currentEnvironment = loadEnvironment()
     private let defaults: UserDefaults
     private let defaultsKey = "networkEnvironmen"
 
-    init(defaults: UserDefaults = .standard) {
+    public init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
     }
 
-    func changeEnvironment(to environment: NetworkEnvironment) {
+    public func changeEnvironment(to environment: NetworkEnvironment) {
         currentEnvironment = environment
         defaults.setValue(environment.rawValue, forKey: defaultsKey)
     }
