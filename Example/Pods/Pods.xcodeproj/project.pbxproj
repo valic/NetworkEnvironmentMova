@@ -12,8 +12,8 @@
 		21E1F8D9660DA21713D01BF9A9E20BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3780EC3089FFECBC541F48F45415B752 /* Pods-NetworkEnvironmentMova_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236C8ADAADBCFEC9AFA6E6C56637919 /* Pods-NetworkEnvironmentMova_Tests-dummy.m */; };
 		4414FF6389CC28E026F7962A849D4DD5 /* NetworkEnvironmentMova-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E0D92060BF8A728DC539283F2DE3AD8 /* NetworkEnvironmentMova-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B13D413A2369D4CB00424B20 /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D41392369D4CB00424B20 /* NetworkEnvironment.swift */; };
-		B13D413C2369D4FE00424B20 /* NetworkEnvironmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D413B2369D4FE00424B20 /* NetworkEnvironmentController.swift */; };
+		B13D413F2369D93900424B20 /* NetworkEnvironmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D413D2369D93900424B20 /* NetworkEnvironmentController.swift */; };
+		B13D41402369D93900424B20 /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D413E2369D93900424B20 /* NetworkEnvironment.swift */; };
 		B879950EA0895F63CD91233B1082EFD2 /* Pods-NetworkEnvironmentMova_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71247518EE68A44F2DF1AEBDD5350319 /* Pods-NetworkEnvironmentMova_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,8 @@
 		98F0CAE6CE849A7FC3E8E4ECA17AD6DD /* Pods-NetworkEnvironmentMova_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkEnvironmentMova_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9DDF9FF0095489FE9658BA3A45D3F68 /* Pods-NetworkEnvironmentMova_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkEnvironmentMova_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B13D41392369D4CB00424B20 /* NetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
-		B13D413B2369D4FE00424B20 /* NetworkEnvironmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironmentController.swift; sourceTree = "<group>"; };
+		B13D413D2369D93900424B20 /* NetworkEnvironmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkEnvironmentController.swift; path = NetworkEnvironmentMova/Classes/NetworkEnvironmentController.swift; sourceTree = "<group>"; };
+		B13D413E2369D93900424B20 /* NetworkEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkEnvironment.swift; path = NetworkEnvironmentMova/Classes/NetworkEnvironment.swift; sourceTree = "<group>"; };
 		B4E2A619DF3CF26DC3CF954E90BD0B2D /* NetworkEnvironmentMova-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NetworkEnvironmentMova-Info.plist"; sourceTree = "<group>"; };
 		B95BEA5D423C39D56A7AD8D92FA733CD /* NetworkEnvironmentMova.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NetworkEnvironmentMova.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BCDA8E40CD1D515B44E68119D60DFB72 /* NetworkEnvironmentMova-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NetworkEnvironmentMova-dummy.m"; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		3583EED459D923D58B2011C2F9F7F18F /* NetworkEnvironmentMova */ = {
 			isa = PBXGroup;
 			children = (
-				B13D41392369D4CB00424B20 /* NetworkEnvironment.swift */,
-				B13D413B2369D4FE00424B20 /* NetworkEnvironmentController.swift */,
+				B13D413E2369D93900424B20 /* NetworkEnvironment.swift */,
+				B13D413D2369D93900424B20 /* NetworkEnvironmentController.swift */,
 				18DE5E6F7CE0B41D1A94A6C99AEEE684 /* Pod */,
 				850450818DA62CBF2E1E5844F65F2615 /* Support Files */,
 			);
@@ -246,6 +246,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					E7B048D3B1B4274622886BDF8DE59087 = {
+						LastSwiftMigration = 1110;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -287,9 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13D413C2369D4FE00424B20 /* NetworkEnvironmentController.swift in Sources */,
+				B13D413F2369D93900424B20 /* NetworkEnvironmentController.swift in Sources */,
+				B13D41402369D93900424B20 /* NetworkEnvironment.swift in Sources */,
 				102FED53249E142D2BEA7B5CAFEBEA2D /* NetworkEnvironmentMova-dummy.m in Sources */,
-				B13D413A2369D4CB00424B20 /* NetworkEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D8E36314FC54640B2AD00A783956A9D /* NetworkEnvironmentMova.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -506,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D8E36314FC54640B2AD00A783956A9D /* NetworkEnvironmentMova.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -526,6 +533,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
