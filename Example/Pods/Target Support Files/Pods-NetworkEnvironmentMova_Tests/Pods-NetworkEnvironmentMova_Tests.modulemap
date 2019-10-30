@@ -1,0 +1,6 @@
+framework module Pods_NetworkEnvironmentMova_Tests {
+  umbrella header "Pods-NetworkEnvironmentMova_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

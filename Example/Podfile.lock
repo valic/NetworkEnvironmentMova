@@ -1,0 +1,16 @@
+PODS:
+  - NetworkEnvironmentMova (0.1.0)
+
+DEPENDENCIES:
+  - NetworkEnvironmentMova (from `../`)
+
+EXTERNAL SOURCES:
+  NetworkEnvironmentMova:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NetworkEnvironmentMova: 8057e9e3c38579e3dab0c9d4506860f4114a68a9
+
+PODFILE CHECKSUM: 7fb4e982183ce3a764ca19871f3a94e431cbee25
+
+COCOAPODS: 1.8.4

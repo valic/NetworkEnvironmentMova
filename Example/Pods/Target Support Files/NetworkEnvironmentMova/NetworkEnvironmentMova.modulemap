@@ -1,0 +1,6 @@
+framework module NetworkEnvironmentMova {
+  umbrella header "NetworkEnvironmentMova-umbrella.h"
+
+  export *
+  module * { export * }
+}
