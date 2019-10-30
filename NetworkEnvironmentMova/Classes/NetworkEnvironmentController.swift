@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NetworkEnvironmentController {
+public class NetworkEnvironmentController {
     private(set) lazy var currentEnvironment = loadEnvironment()
     private let defaults: UserDefaults
     private let defaultsKey = "networkEnvironmen"
