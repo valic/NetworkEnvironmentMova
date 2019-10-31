@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum NetworkEnvironment: String, CaseIterable {
+public enum NetworkEnvironmentType: String, CaseIterable {
     case production
     case staging
 }
